@@ -1,0 +1,6 @@
+<PropertyGroup>
+    <MajorVersion>37</MajorVersion>
+    <MinorVersion Condition=" '$(BUILD_BUILDNUMBER)' != '' ">0</MinorVersion>
+    <PatchVersion>0</PatchVersion>
+    <ReleaseVersion>RELEASE</ReleaseVersion>
+ </PropertyGroup>
