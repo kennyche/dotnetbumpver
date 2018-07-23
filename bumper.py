@@ -2,7 +2,7 @@
 # Author: Kenny Cheung
 # Date: 23/08/2018
 
-import sys, getopt, xml.etree.ElementTree
+import sys, getopt, xml.etree.ElementTree, subprocess
 
 def main(argv):
    inputfile = 'scratch.xml'
@@ -63,6 +63,8 @@ def main(argv):
            atype.text=release
 
    e.write('scratch.xml')
+  # p = subprocess.Popen(['powershell.exe', 'Write-Host ##vso[task.setvariable variable=GitVersionTag;]$VersionString'],
+  #                      stdout=sys.stdout)
 
 if __name__ == "__main__":
    main(sys.argv[1:])
